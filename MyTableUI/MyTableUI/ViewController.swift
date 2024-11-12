@@ -18,21 +18,18 @@ class ViewController: UIViewController {
     }
     
     
+    
+    //navigation contorller code that direct which view to jump
     @IBAction func mainViewTableViewBtnTapped(_ sender: Any) {
         
         // Instantiate the view controller
                let tableViewController = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
                
                // Present it modally
-               self.present(tableViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(tableViewController, animated: true)
     }
     
-    @IBAction func showTableViewScreen(_ sender: Any ) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tableViewController = storyboard.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
-//        self.present(tableViewController, animated: true, completion: nil)
-        self.navigationController?.pushViewController(tableViewController, animated: true)  
-    }
+
 
 }
 
