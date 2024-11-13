@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     //navigation contorller code that direct which view to jump
     @IBAction func mainViewTableViewBtnTapped(_ sender: Any) {
         
-        // Instantiate the view controller
+        // Instantiate the view controller => jump to TableViewController
                let tableViewController = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
                
                // Present it modally
