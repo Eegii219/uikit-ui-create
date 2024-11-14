@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		3DDC821F2CE4E88B00D8DC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DDC82002CE4E88A00D8DC49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DDC82072CE4E88A00D8DC49;
+			remoteInfo = NetworkDataApi;
+		};
+		3DDC82292CE4E88B00D8DC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DDC82002CE4E88A00D8DC49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DDC82072CE4E88A00D8DC49;
+			remoteInfo = NetworkDataApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DDC82082CE4E88A00D8DC49 /* NetworkDataApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkDataApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDC821E2CE4E88B00D8DC49 /* NetworkDataApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkDataApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDC82282CE4E88B00D8DC49 /* NetworkDataApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkDataApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3DDC82302CE4E88B00D8DC49 /* Exceptions for "NetworkDataApi" folder in "NetworkDataApi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3DDC82072CE4E88A00D8DC49 /* NetworkDataApi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3DDC820A2CE4E88A00D8DC49 /* NetworkDataApi */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3DDC82302CE4E88B00D8DC49 /* Exceptions for "NetworkDataApi" folder in "NetworkDataApi" target */,
+			);
+			path = NetworkDataApi;
+			sourceTree = "<group>";
+		};
+		3DDC82212CE4E88B00D8DC49 /* NetworkDataApiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NetworkDataApiTests;
+			sourceTree = "<group>";
+		};
+		3DDC822B2CE4E88B00D8DC49 /* NetworkDataApiUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NetworkDataApiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DDC82052CE4E88A00D8DC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC821B2CE4E88B00D8DC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC82252CE4E88B00D8DC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DDC81FF2CE4E88A00D8DC49 = {
+			isa = PBXGroup;
+			children = (
+				3DDC820A2CE4E88A00D8DC49 /* NetworkDataApi */,
+				3DDC82212CE4E88B00D8DC49 /* NetworkDataApiTests */,
+				3DDC822B2CE4E88B00D8DC49 /* NetworkDataApiUITests */,
+				3DDC82092CE4E88A00D8DC49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DDC82092CE4E88A00D8DC49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DDC82082CE4E88A00D8DC49 /* NetworkDataApi.app */,
+				3DDC821E2CE4E88B00D8DC49 /* NetworkDataApiTests.xctest */,
+				3DDC82282CE4E88B00D8DC49 /* NetworkDataApiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DDC82072CE4E88A00D8DC49 /* NetworkDataApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDC82312CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApi" */;
+			buildPhases = (
+				3DDC82042CE4E88A00D8DC49 /* Sources */,
+				3DDC82052CE4E88A00D8DC49 /* Frameworks */,
+				3DDC82062CE4E88A00D8DC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3DDC820A2CE4E88A00D8DC49 /* NetworkDataApi */,
+			);
+			name = NetworkDataApi;
+			packageProductDependencies = (
+			);
+			productName = NetworkDataApi;
+			productReference = 3DDC82082CE4E88A00D8DC49 /* NetworkDataApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DDC821D2CE4E88B00D8DC49 /* NetworkDataApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDC82362CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApiTests" */;
+			buildPhases = (
+				3DDC821A2CE4E88B00D8DC49 /* Sources */,
+				3DDC821B2CE4E88B00D8DC49 /* Frameworks */,
+				3DDC821C2CE4E88B00D8DC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DDC82202CE4E88B00D8DC49 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DDC82212CE4E88B00D8DC49 /* NetworkDataApiTests */,
+			);
+			name = NetworkDataApiTests;
+			packageProductDependencies = (
+			);
+			productName = NetworkDataApiTests;
+			productReference = 3DDC821E2CE4E88B00D8DC49 /* NetworkDataApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DDC82272CE4E88B00D8DC49 /* NetworkDataApiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDC82392CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApiUITests" */;
+			buildPhases = (
+				3DDC82242CE4E88B00D8DC49 /* Sources */,
+				3DDC82252CE4E88B00D8DC49 /* Frameworks */,
+				3DDC82262CE4E88B00D8DC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DDC822A2CE4E88B00D8DC49 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DDC822B2CE4E88B00D8DC49 /* NetworkDataApiUITests */,
+			);
+			name = NetworkDataApiUITests;
+			packageProductDependencies = (
+			);
+			productName = NetworkDataApiUITests;
+			productReference = 3DDC82282CE4E88B00D8DC49 /* NetworkDataApiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DDC82002CE4E88A00D8DC49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3DDC82072CE4E88A00D8DC49 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3DDC821D2CE4E88B00D8DC49 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3DDC82072CE4E88A00D8DC49;
+					};
+					3DDC82272CE4E88B00D8DC49 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3DDC82072CE4E88A00D8DC49;
+					};
+				};
+			};
+			buildConfigurationList = 3DDC82032CE4E88A00D8DC49 /* Build configuration list for PBXProject "NetworkDataApi" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DDC81FF2CE4E88A00D8DC49;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DDC82092CE4E88A00D8DC49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DDC82072CE4E88A00D8DC49 /* NetworkDataApi */,
+				3DDC821D2CE4E88B00D8DC49 /* NetworkDataApiTests */,
+				3DDC82272CE4E88B00D8DC49 /* NetworkDataApiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DDC82062CE4E88A00D8DC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC821C2CE4E88B00D8DC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC82262CE4E88B00D8DC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DDC82042CE4E88A00D8DC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC821A2CE4E88B00D8DC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDC82242CE4E88B00D8DC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DDC82202CE4E88B00D8DC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DDC82072CE4E88A00D8DC49 /* NetworkDataApi */;
+			targetProxy = 3DDC821F2CE4E88B00D8DC49 /* PBXContainerItemProxy */;
+		};
+		3DDC822A2CE4E88B00D8DC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DDC82072CE4E88A00D8DC49 /* NetworkDataApi */;
+			targetProxy = 3DDC82292CE4E88B00D8DC49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DDC82322CE4E88B00D8DC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkDataApi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DDC82332CE4E88B00D8DC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkDataApi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DDC82342CE4E88B00D8DC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DDC82352CE4E88B00D8DC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DDC82372CE4E88B00D8DC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkDataApi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkDataApi";
+			};
+			name = Debug;
+		};
+		3DDC82382CE4E88B00D8DC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkDataApi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkDataApi";
+			};
+			name = Release;
+		};
+		3DDC823A2CE4E88B00D8DC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkDataApi;
+			};
+			name = Debug;
+		};
+		3DDC823B2CE4E88B00D8DC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba.NetworkDataApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkDataApi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DDC82032CE4E88A00D8DC49 /* Build configuration list for PBXProject "NetworkDataApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDC82342CE4E88B00D8DC49 /* Debug */,
+				3DDC82352CE4E88B00D8DC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDC82312CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDC82322CE4E88B00D8DC49 /* Debug */,
+				3DDC82332CE4E88B00D8DC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDC82362CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDC82372CE4E88B00D8DC49 /* Debug */,
+				3DDC82382CE4E88B00D8DC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDC82392CE4E88B00D8DC49 /* Build configuration list for PBXNativeTarget "NetworkDataApiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDC823A2CE4E88B00D8DC49 /* Debug */,
+				3DDC823B2CE4E88B00D8DC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DDC82002CE4E88A00D8DC49 /* Project object */;
+}

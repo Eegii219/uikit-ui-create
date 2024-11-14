@@ -54,7 +54,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logInBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syt-f9-iwj"/>
-                                    <segue destination="crV-we-0ej" kind="show" id="lNQ-u8-Vvu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Eq-8G-MWm">
@@ -89,7 +88,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showUsersTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAW-Ri-IM4"/>
-                                    <segue destination="M79-hK-2HH" kind="show" id="FT2-KW-Dd2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1i-fT-98y">
-                                <rect key="frame" x="10" y="156" width="373" height="63"/>
+                                <rect key="frame" x="10" y="112" width="373" height="107"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome to you Page!">
@@ -143,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F22-iu-qN6">
-                                <rect key="frame" x="10" y="259" width="378" height="29"/>
+                                <rect key="frame" x="10" y="259" width="378" height="31.333333333333314"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Your email:">
@@ -172,7 +170,7 @@
                                 <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" restorationIdentifier="emailTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8IT-dR-9if">
-                                <rect key="frame" x="10" y="298" width="373" height="34"/>
+                                <rect key="frame" x="10" y="300.33333333333331" width="373" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -229,7 +227,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="gSi-he-416" customClass="UserTableViewCell" customModule="LoginPage" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="50" id="gSi-he-416" customClass="UserTableViewCell" customModule="LoginPage" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSi-he-416" id="XlQ-NS-koV" customClass="UserTableViewCell" customModule="LoginPage" customModuleProvider="target">
@@ -261,6 +259,9 @@
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tD5-mp-LU1"/>
+                    <connections>
+                        <outlet property="tableView" destination="3oK-YR-pDE" id="2tP-9a-BC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOO-9D-X3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -5,21 +5,26 @@
 //  Created by Enkhtsetseg Unurbayar on 11/12/24.
 //
 
+
+/*
+ GETTING DATA FROM JSON FILE
+ */
 import UIKit
 
 
 class UserViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     var users = [UserModel]()
 
-    @IBOutlet weak var tableView: UITableView!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
         // Do any additional setup after loading the view.
-//        self.tableView.dataSource = self
+        self.tableView.dataSource = self
 //        self.tableView.delegate = self
         getDataFromJSON()
     }
@@ -66,7 +71,7 @@ extension UserViewController: UITableViewDataSource {
 
 extension UserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        users[indexPath.row]
+        print("Printing\(users[indexPath.row])")
                
     }
 }
