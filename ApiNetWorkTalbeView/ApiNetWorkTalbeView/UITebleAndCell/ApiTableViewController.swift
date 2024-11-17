@@ -14,6 +14,7 @@ class ApiTableViewController:UIViewController{
    var networkManager: NetworkManager = NetworkManager()
     
     var products = [Product]()
+//    var userProfiles = [UserProfile] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,21 @@ class ApiTableViewController:UIViewController{
         
         DispatchQueue.global(qos: .utility).async {
         self.networkManager.getDataFromApiUsingProtocolDelegate (urlString: "https://fakestoreapi.com/products", modelType: [Product].self)
+            
+//        self.networkManager.getData*/FromApiUsingProtocolDelegate (urlString: "https://reqres.in/api/users", modelType: [UserProfile].self)
     
-                   }
+        }
     }
+    
+    // MARK: - Filter function
+//        func filterData(by name: String) {
+//          userProfiles =  userProfiles.flatMap { userProfile in
+//                userProfile .data.filter { datum in
+//                    datum.firstName.lowercased().contains(name.lowercased())
+//                }
+//            }
+//            apiTableView.reloadData()
+//        }
 
     // MARK: - Table view data source
 
@@ -41,23 +54,27 @@ class ApiTableViewController:UIViewController{
 
 extension ApiTableViewController:NetworkManagerDelegate{
     
-    func didRecieveError(error: any Error) {
-        print("Network deligate!!!")
-       
-    }
-    
-    
+  
+    // func from protocol NetworkManagerDelegate
     func didRecieveData<T:Decodable>(data:T){
         print("Data received in didReceiveData")
                 
                 // Safely cast the data
-                guard let fetchedProducts = data as? [Product] else {
-                    print("Failed to cast data as [Product]")
-                    return
+        guard let fetchedProducts = data as? [Product] else {
+                print("Failed to cast data as [Product]")
+                return
                 }
+        
+//        guard let fetchedWelcomes = data as? [UserProfile] else {
+//                    print("Failed to cast data as [UserProfile]")
+//                    return
+//                }
                 
                 // Update products array
                 self.products = fetchedProducts
+//                self.userProfiles = fetchedUserProfiles
+        
+
                 
                 DispatchQueue.main.async {
                     // Reload table view on main thread after receiving data
@@ -65,33 +82,32 @@ extension ApiTableViewController:NetworkManagerDelegate{
                 }
         }
     
-    
-    
-//    func didRecieveData<T:Decodable>(data:T){
-//        print("got response in didRecieveData")
-//        self.products = data as! [Product]
-//        DispatchQueue.main.async {
-////            self.apiTableViewreloadData()
-//        }
-//    }
-    
-    func didReceiveError(error: any Error) {
-        print("Network Error: \(error.localizedDescription)")
-        
+    // func from protocol NetworkManagerDelegate
+    func didRecieveError(error: any Error) {
+        print("Network deligate error!!!\(error.localizedDescription)")
+       
     }
+    
 }
 
 
 extension ApiTableViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
+//        return userProfiles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let cell = tableView.dequeueReusableCell(withIdentifier: "ApiTableViewCell", for: indexPath) as! ApiTableViewCell
+    
         cell.cellLable.text = products[indexPath.row].description
+//        cell.cellLable.text = userProfiles[indexPath.row].fname
+               print("=========")
+           
         cell.cellImage.image = UIImage(systemName: "richtext.page.fill.he")
         cell.cellImage.tintColor = .brown
+
         return cell
     }
     
@@ -103,7 +119,9 @@ extension ApiTableViewController : UITableViewDataSource{
 
 extension ApiTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("Printing\(products[indexPath.row])")
+//        print("Printing\(welcomes[indexPath.row])")
+        print("Printing\(products[indexPath.row])")
+        
         
     }
 }

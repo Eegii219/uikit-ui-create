@@ -13,9 +13,10 @@ class CellDetailViewController: UIViewController {
     @IBOutlet var cellDetail: UIView!
     
     @IBOutlet weak var cellImageDetail: UIImageView!
+    var cellDetailImage: UIImageView? = nil
     
     var cellDetailLabel: String?
-    var cellDetailImage: UIImageView? = nil
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

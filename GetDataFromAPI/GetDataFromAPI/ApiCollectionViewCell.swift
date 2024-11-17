@@ -13,4 +13,10 @@ class ApiCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellCollectionImage: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    
 }

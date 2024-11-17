@@ -1,24 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M2Z-Ym-gTC">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ApiNetWorkTalbeView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESn-rR-H97">
+                                <rect key="frame" x="16" y="139" width="361" height="50.333333333333343"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Home">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="42"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFq-rb-6zd">
+                                <rect key="frame" x="10" y="218.33333333333334" width="373" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Api" buttonSize="medium"/>
+                                <connections>
+                                    <action selector="showApiNetWork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZt-r7-BWx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFq-rb-6zd" secondAttribute="trailing" constant="10" id="Fwq-QL-VOR"/>
+                            <constraint firstItem="mFq-rb-6zd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Haq-7a-1iB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ESn-rR-H97" secondAttribute="trailing" constant="16" id="Wat-1s-cCU"/>
+                            <constraint firstItem="ESn-rR-H97" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gon-fW-d0p"/>
+                            <constraint firstItem="mFq-rb-6zd" firstAttribute="top" secondItem="ESn-rR-H97" secondAttribute="bottom" constant="29" id="m4h-rx-Krc"/>
+                            <constraint firstItem="ESn-rR-H97" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="oyA-7A-L9I"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="We4-3G-qRL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
+        </scene>
+        <!--Api Table View Controller-->
+        <scene sceneID="Yyt-7p-Pwn">
+            <objects>
+                <viewController storyboardIdentifier="ApiTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1AP-yw-qZD" customClass="ApiTableViewController" customModule="ApiNetWorkTalbeView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wpt-uj-6gD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ApiTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="geR-t4-oya">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellLable" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApiTableViewCell" rowHeight="50" id="VyG-hJ-w4v" customClass="ApiTableViewCell" customModule="ApiNetWorkTalbeView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ApiTableViewCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VyG-hJ-w4v" id="NCE-Gn-OfL" customClass="ApiTableViewCell" customModule="ApiNetWorkTalbeView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" restorationIdentifier="cellImage" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-KU-70z">
+                                                    <rect key="frame" x="15" y="9.6666666666666679" width="40" height="39.666666666666657"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Iq9-VO-Xul"/>
+                                                        <constraint firstAttribute="height" constant="40" id="VzW-UC-aIk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cellLable" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="307" translatesAutoresizingMaskIntoConstraints="NO" id="ASa-sj-9Wh">
+                                                    <rect key="frame" x="70" y="7" width="303" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ASa-sj-9Wh" firstAttribute="leading" secondItem="FUa-KU-70z" secondAttribute="trailing" constant="15" id="CO6-zz-vQG"/>
+                                                <constraint firstItem="FUa-KU-70z" firstAttribute="top" secondItem="NCE-Gn-OfL" secondAttribute="top" constant="10" id="Ewt-pi-UW3"/>
+                                                <constraint firstAttribute="trailing" secondItem="ASa-sj-9Wh" secondAttribute="trailing" constant="20" symbolic="YES" id="La0-mi-aqU"/>
+                                                <constraint firstItem="ASa-sj-9Wh" firstAttribute="top" secondItem="NCE-Gn-OfL" secondAttribute="top" constant="7" id="Xse-jO-eax"/>
+                                                <constraint firstAttribute="bottom" secondItem="ASa-sj-9Wh" secondAttribute="bottom" constant="6" id="d2J-Cn-jeH"/>
+                                                <constraint firstItem="FUa-KU-70z" firstAttribute="leading" secondItem="NCE-Gn-OfL" secondAttribute="leading" constant="15" id="sSD-jd-eqH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImage" destination="FUa-KU-70z" id="Yk4-9N-p2H"/>
+                                            <outlet property="cellLable" destination="ASa-sj-9Wh" id="iI9-Ur-5Cb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H3j-79-4OR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="geR-t4-oya" firstAttribute="bottom" secondItem="H3j-79-4OR" secondAttribute="bottom" id="BEK-yj-2xG"/>
+                            <constraint firstItem="geR-t4-oya" firstAttribute="top" secondItem="H3j-79-4OR" secondAttribute="top" id="Zad-4d-893"/>
+                            <constraint firstItem="geR-t4-oya" firstAttribute="leading" secondItem="H3j-79-4OR" secondAttribute="leading" id="pFT-Cf-Ld3"/>
+                            <constraint firstItem="geR-t4-oya" firstAttribute="trailing" secondItem="H3j-79-4OR" secondAttribute="trailing" id="soO-mk-lcx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="apiTableView" destination="geR-t4-oya" id="MXI-kk-pMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udx-i6-v3p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835.8778625954199" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n8d-1O-4N4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2Z-Ym-gTC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HVX-ZO-5Rh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kxK-ua-9Kk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8U-LS-1nF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

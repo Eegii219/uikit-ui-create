@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showApiNetWork(_ sender: Any) {
+        let api = storyboard?.instantiateViewController(identifier: "ApiTableViewController") as! ApiTableViewController; self.navigationController?.pushViewController(api, animated: true)
+    }
+    
 }
 

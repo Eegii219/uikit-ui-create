@@ -1,0 +1,15 @@
+{
+  "originHash" : "6bd648919972669e780d4dbfb611750256e0227073db7831ad4cf7d20f6774c4",
+  "pins" : [
+    {
+      "identity" : "mathoperationsframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BhushanAbhyankar/MathOperationsFramework",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2b723484289b7e1cccc4875e166321b421048be7"
+      }
+    }
+  ],
+  "version" : 3
+}

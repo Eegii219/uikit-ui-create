@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Userprofile: Codable {
     let page, perPage, total, totalPages: Int
     let data: [Datum]
     let support: Support

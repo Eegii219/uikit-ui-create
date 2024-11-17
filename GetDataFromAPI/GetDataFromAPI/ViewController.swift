@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     }
 
 //
-//    @IBAction func goSecondPageBtnTapped(_ sender: Any) {
-//    
-//        let apiVC = storyboard?.instantiateViewController(identifier: "ApiViewController") as! ApiViewController
-//        self.navigationController?.pushViewController(apiVC, animated: true)
-//        
-//    }
+    @IBAction func goSecondPageBtnTapped(_ sender: Any) {
+    
+        let apiVC = storyboard?.instantiateViewController(identifier: "ApiViewController") as! ApiViewController
+        self.navigationController?.pushViewController(apiVC, animated: true)
+        
+    }
     
 }
 
